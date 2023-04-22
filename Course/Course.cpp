@@ -26,6 +26,7 @@ void rank_student(Student_in* students, int n) {
 	else if (mx == 5 && (mx - mn) == 1) students[n].rank = 4.5;
 	else if (mx == 4 && (mx - mn) == 0) students[n].rank = 4;
 	else students[n].rank = 3;
+
 }
 
 void sortStudentByRank(Student_in* students, int n) {
@@ -55,8 +56,9 @@ void sortStudentByName(Student_in* students, int n) {
 	}
 }
 
+
 int main() {
-	setlocale(LC_ALL, "Ru");
+	setlocale(LC_ALL, "Ru"); 
 	int n;
 	cout << "Введите количество студентов" << endl;
 	cin >> n;
@@ -106,4 +108,6 @@ int main() {
 		cout << endl;
 		i++;
 	}
+
+
 }
